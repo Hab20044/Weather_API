@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>weather</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg py-5">
+    <div class="container">
+      <a class="navbar-brand text-white ms-5"><img src="./images/logo@2x.png" class="me-2" alt="">weather</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item  px-3 ">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item  px-3 ">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item  px-3 ">
+            <a class="nav-link" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item  px-3 ">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item  px-3 ">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div class="header">
+    <div class="ms-5  ps-5  d-flex justify-content-center align-items-center w-75 ">
+      <input type="text" class="form-control rounded-pill p-2 mt-5 " placeholder="Find your location..."
+        aria-label="location" aria-describedby="button-addon2">
+      <button class="btn btn-info rounded-pill mt-5" type="button" id="button-addon2">find</button>
+    </div>
+
+    <div class="row mt-5 gx-0 w-75 m-auto">
+      <div class="col-md-4 ">
+        <div class="content py-5 ps-3">
+          <p class="fs-4">cairo</p>
+          <h1 class="display-1 fw-bolder " id="temp">19.4c</h1>
+          <!-- <i class="fa-solid fa-cloud-arrow-up"></i> -->
+          <br>
+          <span class="pt-5" id="condition">cloudy</span>
+          <div class="all d-flex mt-5">
+            <div class="rain d-flex align-items-center px-2">
+              <i class="fa-solid fa-umbrella"></i>
+              <p id="rain" class="mt-3 ps-1"></p>
+            </div>
+  
+            <div class=" wind d-flex align-items-center px-2">
+              <i class="fa-solid fa-wind"></i>
+              <p id="wind" class="mt-3 ps-1"></p>
+  
+            </div>
+  
+            <div class="wind_dir d-flex align-items-center ">
+              <i class="fa-brands fa-nfc-directional"></i>
+              <p id="wind_dir" class="mt-3 ps-1"></p>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+        
+
+
+
+
+      </div>
+
+
+      
+      <div class=" col-md-4  ">
+        <div class="contentt py-5 d-flex justify-content-center align-items-center flex-column ">
+          <!-- <i class="fa-solid fa-cloud-arrow-up mb-5 pb-5"></i> -->
+           <div class="inner mb-4">
+            <h1 class="text-center" id="temp1">19.4c</h1>
+            <p id="mintemp" class="text-center"></p>
+    
+            <br>
+            <span id="condition1">cloudy</span>
+           </div>
+          
+  
+        </div>
+    
+
+      </div>
+      <div class=" col-md-4 ">
+        <div class="content py-5  d-flex justify-content-center align-items-center flex-column">
+          <!-- <i class="fa-solid fa-cloud-arrow-up mb-5 pb-5"></i> -->
+          <h1 class="text-center" id="temp2">19.4c</h1>
+          <p id="mintemp1" class="text-center"></p>
+  
+          <br>
+          <span id="condition2">cloudy</span>
+  
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/index.js"></script>
+</body>
+
+</html>
